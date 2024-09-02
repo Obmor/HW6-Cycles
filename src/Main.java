@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Exercise 3.");
-        for (int i = 0; i < 17; i = i + 2) {
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println(i);
         }
 
@@ -44,18 +44,19 @@ public class Main {
         System.out.println();
         System.out.println("Exercise 8.");
         int salary = 29_000;
+        int total = 0;
         for (int i = 0; i < 12; i++) {
-            System.out.println("Месяц " + i + ", сумма накомлений равна " +
-                    salary * i + " рублей.");
+            total = total + salary;
+            System.out.println("Месяц " + i + ", сумма накомлений равна " + total + " рублей.");
         }
 
         System.out.println();
         System.out.println("Exercise 9.");
-        int total = 0;
+        double total1 = 0;
         for (int i = 0; i < 12; i++) {
-            total = total + salary / 100; // salary взято из задания 8.
-            total = total + salary;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
+            total1 = total1 + salary; // salary взято из задания 8.
+            total1 = total1 * 1.01;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей.");
         }
 
         System.out.println();
